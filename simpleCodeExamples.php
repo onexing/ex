@@ -29,6 +29,7 @@ Class ApiController extends BaseController
         return response()->json(self::anyMakeFunctionFromTrait(AnyModule::createAny($request->all())));
     }
     
+    //TODO: except this function from API class
     public static function getVersions() 
     {
         phpinfo();
